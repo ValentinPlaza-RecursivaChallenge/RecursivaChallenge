@@ -1,0 +1,85 @@
+﻿@using RecursivaChallenge.Models
+@using RecursivaChallenge.Models.ResponseObject
+
+@{
+    ViewData["Title"] = "Recursiva Challenge";
+    var nuevoSocio = new SocioResponse();
+    var socioResponse = (SocioResponse?)ViewBag.SocioResponse;
+}
+
+<div class="text-center">
+    <form method="post" enctype="multipart/form-data" asp-controller="Socio" asp-action="Index">
+        <input type="file" name="file" accept=".csv" />
+        <input type="submit" value="Importar" />
+    </form>
+</div>
+
+<div class="text-center">
+
+    @if (socioResponse != null)
+    {
+        <hr />
+        <h3>
+            1. Cantidad total de personas registradas. = @socioResponse.CantidadTotal
+        </h3>
+        <h3>
+            2. El promedio de edad de los Socio de Racing. = @socioResponse.PromedioEdadClub
+        </h3>
+        <h3>
+            3. Un listado con las 100 primeras personas casadas, con estudios Universitarios, ordenadas de menor a mayor según su edad. 
+            Por cada persona, mostrar: nombre, edad y equipo.
+        </h3>
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Equipo</th>
+            </tr>
+            @foreach (var soc in socioResponse.SocioInfoParcial)
+            {
+                <tr>
+                    <td>@soc.Nombre</td>
+                    <td>@soc.Edad</td>
+                    <td>@soc.Equipo</td>
+                </tr>
+            }
+        </table>
+        <h3>
+            4. Un listado con los 5 nombres más comunes entre los hinchas de River.        
+        </h3>
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <th>Nombre</th>
+            </tr>
+            @foreach (string nombre in socioResponse.NombresComunes)
+            {
+                <tr>
+                    <td>@nombre</td>
+                </tr>
+            }
+        </table>
+        <h3>
+            5. Un listado, ordenado de mayor a menor según la cantidad de Socio, que enumere, junto con cada equipo, el promedio de edad de sus Socio, 
+            la menor edad registrada y la mayor edad registrada.        
+        </h3>
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <th>Equipo</th>
+                <th>Cantidad de Socio</th>
+                <th>Promedio de Edad</th>
+                <th>Edad Minima</th>
+                <th>Edad Maxima</th>
+            </tr>
+            @foreach (var soc in socioResponse.ClubsInfo)
+            {
+                <tr>
+                    <td>@soc.Equipo</td>
+                    <td>@soc.Cantidad</td>
+                    <td>@soc.PromedioEdad</td>
+                    <td>@soc.EdadMinima</td>
+                    <td>@soc.EdadMaxima</td>
+                </tr>
+            }
+        </table>
+    }
+</div>

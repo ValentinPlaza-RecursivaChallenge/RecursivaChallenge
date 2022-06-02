@@ -1,0 +1,12 @@
+C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge.Helper\obj\Debug\net6.0\RecursivaChallenge.Helper.csproj.AssemblyReference.cache
+C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge.Helper\obj\Debug\net6.0\RecursivaChallenge.Helper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge.Helper\obj\Debug\net6.0\RecursivaChallenge.Helper.AssemblyInfoInputs.cache
+C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge.Helper\obj\Debug\net6.0\RecursivaChallenge.Helper.AssemblyInfo.cs
+C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge.Helper\obj\Debug\net6.0\RecursivaChallenge.Helper.csproj.CoreCompileInputs.cache
+C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge.Helper\bin\Debug\net6.0\RecursivaChallenge.Helper.deps.json
+C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge.Helper\bin\Debug\net6.0\RecursivaChallenge.Helper.dll
+C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge.Helper\bin\Debug\net6.0\RecursivaChallenge.Helper.pdb
+C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge.Helper\obj\Debug\net6.0\RecursivaChallenge.Helper.dll
+C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge.Helper\obj\Debug\net6.0\refint\RecursivaChallenge.Helper.dll
+C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge.Helper\obj\Debug\net6.0\RecursivaChallenge.Helper.pdb
+C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge.Helper\obj\Debug\net6.0\ref\RecursivaChallenge.Helper.dll

@@ -1,0 +1,30 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:30516",
+      "sslPort": 44345
+    }
+  },
+  "profiles": {
+    "RecursivaChallenge": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:8012;http://localhost:8013",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "NLOG_INTERNAL_LOG_FILE": "RecursivaChallenge.InternalLog.txt"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "NLOG_INTERNAL_LOG_FILE": "Recursiva.InternalLog.txt"
+      }
+    }
+  }
+}
