@@ -7,7 +7,9 @@ namespace RecursivaChallenge
     {
         public static async Task Main(string[] args)
         {
-            var logger = LogManager.Setup().LoadConfigurationFromFile("nlog.config").GetCurrentClassLogger();
+            var logger = LogManager.Setup()
+                .SetupInternalLogger(x => x.SetupFromEnvironmentVariables())
+                .LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 
             logger.Debug("Inicio de Aplicacion.");
 
