@@ -17,11 +17,11 @@ namespace RecursivaChallenge.Repository
             Logger = logger;
         }
 
-        public async Task<List<ClubInfoResponse>> SocioXClubYInfoEdades()
+        public List<ClubInfoResponse> SocioXClubYInfoEdades()
         {
             try
             {
-                var rta = context.Socios
+                return context.Socios
                    .GroupBy(x => x.Equipo)
                    .OrderByDescending(x => x.Count())
                    .Select(x => new ClubInfoResponse
@@ -33,8 +33,6 @@ namespace RecursivaChallenge.Repository
                        EdadMaxima = x.Max(y => y.Edad)
                    })
                    .ToList();
-
-                return rta;
             }
             catch (Exception ex)
             {
@@ -43,18 +41,17 @@ namespace RecursivaChallenge.Repository
             }
         }
 
-        public async Task<List<string>> NombresMasComunesXClub(string club)
+        public List<string> NombresMasComunesXClub(string club)
         {
             try
             {
-                var rta = context.Socios
+                return context.Socios
                     .Where(x => x.Equipo == club)
                     .GroupBy(x => x.Nombre)
                     .OrderByDescending(x => x.Count())
-                    .Select(x => x.Key)
                     .Take(5)
+                    .Select(x => x.Key)
                     .ToList();
-                return rta;
             }
             catch (Exception ex)
             {
@@ -62,17 +59,16 @@ namespace RecursivaChallenge.Repository
                 return new List<string>();
             }
         }
-        public async Task<List<SocioInfoParcialResponse>> SocioXEstadoCivilYNivelDeEstudio(string estadoCivil, string nivelDeEstudios)
+        public List<SocioInfoParcialResponse> SocioXEstadoCivilYNivelDeEstudio(string estadoCivil, string nivelDeEstudios)
         {
             try
             {
-                var rta = context.Socios
-                    .OrderBy(x => x.Edad)
+                return context.Socios
                     .Where(x => x.EstadoCivil == estadoCivil && x.NivelDeEstudios == nivelDeEstudios)
-                    .Select(x => new SocioInfoParcialResponse{ Nombre = x.Nombre, Edad = x.Edad, Equipo = x.Equipo })
+                    .OrderBy(x => x.Edad)
                     .Take(100)
+                    .Select(x => new SocioInfoParcialResponse{ Nombre = x.Nombre, Edad = x.Edad, Equipo = x.Equipo })
                     .ToList();
-                return rta;
             }
             catch (Exception ex)
             {
@@ -80,15 +76,14 @@ namespace RecursivaChallenge.Repository
                 return new List<SocioInfoParcialResponse>();
             }
         }
-        public async Task<double?> PromedioEdadClub(string club)
+        public double? PromedioEdadClub(string club)
         {
             try
             {
-                var promedio = context.Socios
+                return context.Socios
                     .Where(x => x.Equipo == club)
                     .Average(x => x.Edad);
 
-                return promedio;
             }
             catch (Exception ex)
             {
@@ -96,10 +91,17 @@ namespace RecursivaChallenge.Repository
                 return null;
             }
         }
-        public async Task<int> CantidadTotalSocio()
+        public int CantidadTotalSocio()
         {
-            var rta = context.Socios.Count();
-            return rta;
+            try
+            {
+                return context.Socios.Count();
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError(ex, "Surgio un error al obtener la Cantidad totald de socios");
+                return 0;
+            }
         }
         public async Task<bool> InsertBulkFileCsv(string filePath)
         {

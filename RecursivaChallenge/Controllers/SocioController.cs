@@ -31,7 +31,7 @@ namespace RecursivaChallenge.Controllers
             {
                 var guardo = await GuardarEnBDCsv(file);
                 if (guardo)
-                    ViewBag.SocioResponse = await CargarResponse();
+                    ViewBag.SocioResponse = CargarResponse();
 
                 return View();
 
@@ -49,6 +49,10 @@ namespace RecursivaChallenge.Controllers
             try
             {
                 var borro = await repository.TruncateTabla("Socios");
+
+                if (!borro)
+                    return false;
+
                 var filePath = await Files.SaveAsync(file);
                 var guardo = await repository.InsertBulkFileCsv(filePath);
                 Files.Delete(filePath);
@@ -57,40 +61,28 @@ namespace RecursivaChallenge.Controllers
             catch (Exception ex)
             {
                 Logger.LogError(ex, "Algo salio mal al guardar archivo csv");
-                throw ex;
+                return false;
             }
         }
 
-        private async Task<SocioResponse> CargarResponse()
+        private SocioResponse CargarResponse()
         {
             try
             {
                 var socioResponse = new SocioResponse();
 
-                var SocioXEsYNvTask = repository.SocioXEstadoCivilYNivelDeEstudio("Casado", "Universitario");
-                var SocioXEsYNv = await SocioXEsYNvTask;
-                var promedioEdadClubTask = repository.PromedioEdadClub("Racing");
-                var promedioEdadClub = await promedioEdadClubTask;
-                var nombresMasComunesTask = repository.NombresMasComunesXClub("River");
-                var nombresMasComunes = await nombresMasComunesTask;
-                var clubsInfoTask = repository.SocioXClubYInfoEdades();
-                var clubInfo = await clubsInfoTask;
-                var cantTotalTask = repository.CantidadTotalSocio();
-                var cantTotal = await cantTotalTask;
-
-
-                socioResponse.NombresComunes = nombresMasComunes;
-                socioResponse.PromedioEdadClub = promedioEdadClub;
-                socioResponse.CantidadTotal = cantTotal;
-                socioResponse.ClubsInfo = clubInfo;
-                socioResponse.SocioInfoParcial = SocioXEsYNv;
+                socioResponse.NombresComunes = repository.NombresMasComunesXClub("River");
+                socioResponse.PromedioEdadClub = repository.PromedioEdadClub("Racing");
+                socioResponse.CantidadTotal = repository.CantidadTotalSocio();
+                socioResponse.ClubsInfo = repository.SocioXClubYInfoEdades();
+                socioResponse.SocioInfoParcial = repository.SocioXEstadoCivilYNivelDeEstudio("Casado", "Universitario");
 
                 return socioResponse;
             }
             catch (Exception ex)
             {
                 Logger.LogError(ex, "Error al cargar Socio Response");
-                throw ex;
+                return null;
             }
         }
     }
