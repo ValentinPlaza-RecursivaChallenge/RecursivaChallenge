@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "9jhZcAyeAztIzjOdN9br8Y8U/s5D/6mtc5b8htZDuOrkLE+/n8fK82zehylcffHABk1bLyXWQ8oicyKVfruG+Q==",
+  "dgSpecHash": "D0o/PvsDMk9OW2y0qOZwK6JwgRxmIpowQcfV/ro9oRfO3+IJdk37ouKeOW7R2b5nbr6RZFjoe7LbKYuVtAYi2w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Juan\\Desktop\\Pruebas tecnicas\\Recursiva challenge\\SolucionRecursiva\\RecursivaChallenge.Helper\\RecursivaChallenge.Helper.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Juan\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",
     "C:\\Users\\Juan\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\Juan\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\Juan\\.nuget\\packages\\nlog\\5.0.0\\nlog.5.0.0.nupkg.sha512",
     "C:\\Users\\Juan\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
   ],
   "logs": []

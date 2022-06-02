@@ -9,7 +9,8 @@
       "RecursivaChallenge.Helper/1.0.0": {
         "dependencies": {
           "CsvHelper": "27.2.1",
-          "Microsoft.AspNetCore.Http.Features": "5.0.17"
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
+          "NLog": "5.0.0"
         },
         "runtime": {
           "RecursivaChallenge.Helper.dll": {}
@@ -40,6 +41,14 @@
           "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {
             "assemblyVersion": "5.0.0.0",
             "fileVersion": "5.0.521.16609"
+          }
+        }
+      },
+      "NLog/5.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.1032"
           }
         }
       },
@@ -79,6 +88,13 @@
       "sha512": "sha512-5WPSmL4YeP7eW+Vc8XZ4DwjYWBAiSwDV9Hm63JJWcz1Ie3Xjv4KuJXzgCstj48LkLfVCYa7mLcx7y+q6yqVvtw==",
       "path": "microsoft.extensions.primitives/5.0.1",
       "hashPath": "microsoft.extensions.primitives.5.0.1.nupkg.sha512"
+    },
+    "NLog/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OG9UQhhSnF31k1OImuZ3ogvJ+ktMI+P3QYhwA4cg3Fg5wznYS7PVQMzFglY2Bf4dHTYR/8CrNVgO7dFTfmvF2w==",
+      "path": "nlog/5.0.0",
+      "hashPath": "nlog.5.0.0.nupkg.sha512"
     },
     "System.IO.Pipelines/5.0.2": {
       "type": "package",

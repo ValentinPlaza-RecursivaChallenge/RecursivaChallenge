@@ -22,7 +22,6 @@ namespace RecursivaChallenge.Validations
                     return new ValidationResult(GetErrorMessage());
                 }
             }
-
             return ValidationResult.Success;
         }
 
