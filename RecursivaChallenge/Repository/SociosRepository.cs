@@ -107,8 +107,14 @@ namespace RecursivaChallenge.Repository
         {
             try
             {
-                var formatFilePath = AppContext.BaseDirectory + @"FormatFileSql.xml";
-                await context.Database.ExecuteSqlInterpolatedAsync($"EXEC [dbo].[sp_InsertBulkCsv] {filePath}, {formatFilePath}");
+                var nobreFile = @"src\\FormatFileSql.xml";
+                var formatFilePath = AppContext.BaseDirectory;
+                var pathdescompuesto = formatFilePath.Split("\\").ToList();
+                pathdescompuesto.RemoveRange(pathdescompuesto.Count()-4, 4);
+                pathdescompuesto.Add(nobreFile);
+                var path = String.Join("\\", pathdescompuesto);
+
+                await context.Database.ExecuteSqlInterpolatedAsync($"EXEC [dbo].[sp_InsertBulkCsv] {filePath}, {path}");
 
                 return true;
             }

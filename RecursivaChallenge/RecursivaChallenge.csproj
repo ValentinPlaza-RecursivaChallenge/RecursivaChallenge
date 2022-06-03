@@ -21,4 +21,8 @@
     <ProjectReference Include="..\RecursivaChallenge.Helper\RecursivaChallenge.Helper.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="src\" />
+  </ItemGroup>
+
 </Project>
