@@ -363,4 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # Internal Log
-/RecursivaChallenge/RecursivaChallenge.InternalLog.txt
+\RecursivaChallenge\RecursivaChallenge.InternalLog.txt

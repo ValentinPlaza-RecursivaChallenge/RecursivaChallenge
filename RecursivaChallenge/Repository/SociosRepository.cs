@@ -76,7 +76,7 @@ namespace RecursivaChallenge.Repository
                 return new List<SocioInfoParcialResponse>();
             }
         }
-        public double? PromedioEdadClub(string club)
+        public double PromedioEdadClub(string club)
         {
             try
             {
@@ -88,7 +88,7 @@ namespace RecursivaChallenge.Repository
             catch (Exception ex)
             {
                 Logger.LogError(ex, "Surgio un error al calcular el promedio de edad");
-                return null;
+                return 0;
             }
         }
         public int CantidadTotalSocio()

@@ -5,84 +5,147 @@
     ViewData["Title"] = "Recursiva Challenge";
     var nuevoSocio = new SocioResponse();
     var socioResponse = (SocioResponse?)ViewBag.SocioResponse;
+    var index = 0;
 }
 
-<div class="text-center">
-    <form method="post" enctype="multipart/form-data" asp-controller="Socio" asp-action="Index">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>        
-        <input type="file" name="CsvFile" accept=".csv"/>
-        <span asp-validation-for="CsvFile" class="text-danger"></span>
-        <label class="text-danger">@ViewBag.MalFormateado</label>
-        <input type="submit" value="Importar" />
+<div class="conteiner2">
+    <form method="post" class="form-custom" enctype="multipart/form-data" asp-controller="Socio" asp-action="Index">
+        <div class="card">
+            <div class="card2">
+                <!-- <div class=""> -->
+                    <input class="form-control file-input" type="file" id="formFile" name="CsvFile" accept=".csv">
+                    <span asp-validation-for="CsvFile" class="text-danger"></span>
+                    <label class="text-danger">@ViewBag.MalFormateado</label>
+                <!-- </div> -->
+                <div class="">
+                    <!-- Reemplazar por input de ser necesario -->
+                    <button class="btn btn-success" type="submit">ACEPTAR</button>
+                </div>
+            </div>
+        </div>
     </form>
-</div>
-
-<div class="text-center">
-
-    @if (socioResponse != null)
+    @if (socioResponse is not null)
     {
-        <hr />
-        <h3>
-            1. Cantidad total de personas registradas. = @socioResponse.CantidadTotal
-        </h3>
-        <h3>
-            2. El promedio de edad de los Socio de Racing. = @socioResponse.PromedioEdadClub
-        </h3>
-        <h3>
-            3. Un listado con las 100 primeras personas casadas, con estudios Universitarios, ordenadas de menor a mayor según su edad. 
-            Por cada persona, mostrar: nombre, edad y equipo.
-        </h3>
-        <table cellpadding="0" cellspacing="0">
-            <tr>
-                <th>Nombre</th>
-                <th>Edad</th>
-                <th>Equipo</th>
-            </tr>
-            @foreach (var soc in socioResponse.SocioInfoParcial)
-            {
-                <tr>
-                    <td>@soc.Nombre</td>
-                    <td>@soc.Edad</td>
-                    <td>@soc.Equipo</td>
-                </tr>
-            }
-        </table>
-        <h3>
-            4. Un listado con los 5 nombres más comunes entre los hinchas de River.        
-        </h3>
-        <table cellpadding="0" cellspacing="0">
-            <tr>
-                <th>Nombre</th>
-            </tr>
-            @foreach (string nombre in socioResponse.NombresComunes)
-            {
-                <tr>
-                    <td>@nombre</td>
-                </tr>
-            }
-        </table>
-        <h3>
-            5. Un listado, ordenado de mayor a menor según la cantidad de Socio, que enumere, junto con cada equipo, el promedio de edad de sus Socio, 
-            la menor edad registrada y la mayor edad registrada.        
-        </h3>
-        <table cellpadding="0" cellspacing="0">
-            <tr>
-                <th>Equipo</th>
-                <th>Cantidad de Socio</th>
-                <th>Promedio de Edad</th>
-                <th>Edad Minima</th>
-                <th>Edad Maxima</th>
-            </tr>
-            @foreach (var soc in socioResponse.ClubsInfo)
-            {
-                <tr>
-                    <td>@soc.Equipo</td>
-                    <td>@soc.Cantidad</td>
-                    <td>@soc.PromedioEdad</td>
-                    <td>@soc.EdadMinima</td>
-                    <td>@soc.EdadMaxima</td>
-                </tr>
-            }
-        </table>
+    <div class="bigCard">
+        <div class="bigCard2">
+            <div class="sectorLabels"> 
+                <label>Cantidad de socios: @socioResponse.CantidadTotal</label>
+                <label>Promedio edad socios Racing: @socioResponse.PromedioEdadClub</label>
+            </div>
+            <div class="sectorModals">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">Casados y universitarios</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal2">Nombres river</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal3">Info clubes</button>
+            </div>
+        </div>
+    </div>
     }
 </div>
+@if(socioResponse is not null){
+<div class="modal fade" id="miModal" tabindex="-1" aria-hideen="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Socios universitarios y casados</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Equipo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var soc in socioResponse.SocioInfoParcial)
+                    {
+                    index++;
+                            <tr>
+                                <td scope="row">@index</td>
+                                <td>@soc.Nombre</td>
+                                <td>@soc.Edad</td>
+                                <td>@soc.Equipo</td>
+                            </tr>
+                    }   
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="miModal2" tabindex="-1" aria-hideen="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Nombre mas comunes River</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{index=0;}
+                        @foreach (string nombre in socioResponse.NombresComunes)
+                        {
+                            index++;
+                            <tr>
+                                <td scope="row">@index</td>
+                                <td>@nombre</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="miModal3" tabindex="-1" aria-hideen="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Informacion clubes</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th>Equipo</th>
+                            <th>Cantidad Socio</th>
+                            <th>Promedio Edad</th>
+                            <th>Edad Minima</th>
+                            <th>Edad Maxima</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{index=0;}
+                        @foreach (var soc in socioResponse.ClubsInfo)
+                        {
+                            index++;
+                            <tr>
+                                <td scope="row">@index</td>
+                                <td>@soc.Equipo</td>
+                                <td>@soc.Cantidad</td>
+                                <td>@soc.PromedioEdad</td>
+                                <td>@soc.EdadMinima</td>
+                                <td>@soc.EdadMaxima</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+}

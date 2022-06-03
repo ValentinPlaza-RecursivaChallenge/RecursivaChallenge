@@ -91,7 +91,7 @@ namespace RecursivaChallenge.Controllers
                 var socioResponse = new SocioResponse();
 
                 socioResponse.NombresComunes = repository.NombresMasComunesXClub("River");
-                socioResponse.PromedioEdadClub = repository.PromedioEdadClub("Racing");
+                socioResponse.PromedioEdadClub = Math.Round(repository.PromedioEdadClub("Racing"),2);
                 socioResponse.CantidadTotal = repository.CantidadTotalSocio();
                 socioResponse.ClubsInfo = repository.SocioXClubYInfoEdades();
                 socioResponse.SocioInfoParcial = repository.SocioXEstadoCivilYNivelDeEstudio("Casado", "Universitario");

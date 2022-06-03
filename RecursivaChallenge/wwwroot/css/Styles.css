@@ -1,26 +1,9 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-    margin-bottom: 60px;
+body{
     background-color: #121212;
 }
 
-.conteiner2 {
+.conteiner{
     display: flex;
-    justify-content: center;
     flex-direction: column;
     padding: 3%;
     height: 100%;
@@ -29,7 +12,7 @@ body {
 }
 
 .card {
-    width: 100%;
+    width: 35%;
     height: 150px;
     background-image: linear-gradient(163deg, #ffea00 0%, #00ff2a 100%);
     border-radius: 20px;
@@ -44,26 +27,17 @@ body {
     align-items: center;
     transform: scale(0.995);
     background-color: #121212;
-    border-radius: 20px;
+    border-radius:20px;
     transition: all .2s;
 }
 
 .card:hover {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 102, 0.608);
-}
-
-.file-input{
-    width:70%;
-}
-.form-custom{
-    height:100%;
-    width: 45%;
-}
-
+}   
 
 .bigCard {
     margin-top: 5%;
-    width: 80%;
+    width: 60%;
     height: 150px;
     background-image: linear-gradient(163deg, #ffea00 0%, #00ff2a 100%);
     border-radius: 20px;
@@ -73,34 +47,18 @@ body {
 .bigCard2 {
     height: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     transform: scale(0.995);
     background-color: #121212;
-    border-radius: 20px;
+    border-radius:20px;
     transition: all .2s;
 }
 
-.bigCard:hover {
+.card:hover {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 102, 0.608);
 }
 
-label {
+label{
     margin-left: 5%;
-    color: aliceblue;
-}
-
-.sectorLabels {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.sectorModals{
-    width:70%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.btn-primary{
-    height: 30%;
 }

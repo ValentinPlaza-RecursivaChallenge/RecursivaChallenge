@@ -10,3 +10,159 @@
 2022-06-02 19:31:31.8676 Info Adding target AsyncTargetWrapper(Name=logConsole)
 2022-06-02 19:31:31.8990 Info Closing old configuration.
 2022-06-02 19:31:31.9150 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-02 19:37:35.3971 Info Message Template Auto Format enabled
+2022-06-02 19:37:35.3971 Info Loading assembly: NLog.Extensions.Logging
+2022-06-02 19:37:35.4125 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-02 19:37:35.5049 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-02 19:37:35.5275 Info Closing old configuration.
+2022-06-02 19:37:35.5369 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 12:34:12.9345 Info Message Template Auto Format enabled
+2022-06-03 12:34:12.9466 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 12:34:12.9466 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 12:34:13.0615 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 12:34:13.0801 Info Closing old configuration.
+2022-06-03 12:34:13.0899 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 12:36:21.0277 Info Message Template Auto Format enabled
+2022-06-03 12:36:21.0467 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 12:36:21.0467 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 12:36:21.1641 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 12:36:21.1825 Info Closing old configuration.
+2022-06-03 12:36:21.1926 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 12:37:43.5918 Info Message Template Auto Format enabled
+2022-06-03 12:37:43.6036 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 12:37:43.6036 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 12:37:43.7305 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 12:37:43.7530 Info Closing old configuration.
+2022-06-03 12:37:43.7679 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 12:39:41.6320 Info Message Template Auto Format enabled
+2022-06-03 12:39:41.6518 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 12:39:41.6518 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 12:39:41.7819 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 12:39:41.8128 Info Closing old configuration.
+2022-06-03 12:39:41.8289 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 12:40:35.3000 Info Message Template Auto Format enabled
+2022-06-03 12:40:35.3163 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 12:40:35.3163 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 12:40:35.4454 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 12:40:35.4693 Info Closing old configuration.
+2022-06-03 12:40:35.4792 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 12:41:41.4468 Info Message Template Auto Format enabled
+2022-06-03 12:41:41.4580 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 12:41:41.4580 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 12:41:41.5616 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 12:41:41.5831 Info Closing old configuration.
+2022-06-03 12:41:41.5831 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 12:44:17.5828 Info Message Template Auto Format enabled
+2022-06-03 12:44:17.6001 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 12:44:17.6001 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 12:44:17.7267 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 12:44:17.7491 Info Closing old configuration.
+2022-06-03 12:44:17.7640 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 12:46:08.9330 Info Message Template Auto Format enabled
+2022-06-03 12:46:08.9506 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 12:46:08.9506 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 12:46:09.1136 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 12:46:09.1438 Info Closing old configuration.
+2022-06-03 12:46:09.1627 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 12:47:41.6353 Info Message Template Auto Format enabled
+2022-06-03 12:47:41.6470 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 12:47:41.6470 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 12:47:41.7704 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 12:47:41.7926 Info Closing old configuration.
+2022-06-03 12:47:41.8031 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 12:59:43.5090 Info Message Template Auto Format enabled
+2022-06-03 12:59:43.5195 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 12:59:43.5195 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 12:59:43.6001 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 12:59:43.6186 Info Closing old configuration.
+2022-06-03 12:59:43.6186 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 13:00:10.8545 Info Message Template Auto Format enabled
+2022-06-03 13:00:10.8774 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 13:00:10.8797 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 13:00:11.0660 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 13:00:11.0978 Info Closing old configuration.
+2022-06-03 13:00:11.1158 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 13:44:19.3886 Info Message Template Auto Format enabled
+2022-06-03 13:44:19.3985 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 13:44:19.3985 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 13:44:19.4837 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 13:44:19.5032 Info Closing old configuration.
+2022-06-03 13:44:19.5032 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 13:44:49.0750 Info Message Template Auto Format enabled
+2022-06-03 13:44:49.0848 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 13:44:49.0848 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 13:44:49.1737 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 13:44:49.1932 Info Closing old configuration.
+2022-06-03 13:44:49.1932 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 13:45:31.7814 Info Message Template Auto Format enabled
+2022-06-03 13:45:31.8017 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 13:45:31.8017 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 13:45:31.9427 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 13:45:31.9723 Info Closing old configuration.
+2022-06-03 13:45:31.9886 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 13:50:17.6211 Info Message Template Auto Format enabled
+2022-06-03 13:50:17.6315 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 13:50:17.6315 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 13:50:17.7159 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 13:50:17.7333 Info Closing old configuration.
+2022-06-03 13:50:17.7424 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 13:50:56.8161 Info Message Template Auto Format enabled
+2022-06-03 13:50:56.8251 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 13:50:56.8251 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 13:50:56.9277 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 13:50:56.9510 Info Closing old configuration.
+2022-06-03 13:50:56.9614 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 13:55:26.2988 Info Message Template Auto Format enabled
+2022-06-03 13:55:26.3074 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 13:55:26.3074 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 13:55:26.3961 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 13:55:26.4138 Info Closing old configuration.
+2022-06-03 13:55:26.4138 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 13:59:30.6367 Info Message Template Auto Format enabled
+2022-06-03 13:59:30.6473 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 13:59:30.6473 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 13:59:30.7407 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 13:59:30.7598 Info Closing old configuration.
+2022-06-03 13:59:30.7707 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 14:01:11.6476 Info Message Template Auto Format enabled
+2022-06-03 14:01:11.6476 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 14:01:11.6476 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 14:01:11.7389 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 14:01:11.7575 Info Closing old configuration.
+2022-06-03 14:01:11.7575 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 14:07:19.5944 Info Message Template Auto Format enabled
+2022-06-03 14:07:19.6046 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 14:07:19.6046 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 14:07:19.7065 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 14:07:19.7278 Info Closing old configuration.
+2022-06-03 14:07:19.7395 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 14:23:16.0145 Info Message Template Auto Format enabled
+2022-06-03 14:23:16.0301 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 14:23:16.0301 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 14:23:16.1344 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 14:23:16.1552 Info Closing old configuration.
+2022-06-03 14:23:16.1644 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 14:24:36.6656 Info Message Template Auto Format enabled
+2022-06-03 14:24:36.6656 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 14:24:36.6762 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 14:24:36.7689 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 14:24:36.7931 Info Closing old configuration.
+2022-06-03 14:24:36.8074 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 14:28:58.1941 Info Message Template Auto Format enabled
+2022-06-03 14:28:58.2166 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 14:28:58.2166 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 14:28:58.3003 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 14:28:58.3208 Info Closing old configuration.
+2022-06-03 14:28:58.3208 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 14:30:33.5947 Info Message Template Auto Format enabled
+2022-06-03 14:30:33.6053 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 14:30:33.6053 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 14:30:33.6936 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 14:30:33.7188 Info Closing old configuration.
+2022-06-03 14:30:33.7302 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
+2022-06-03 14:33:01.1033 Info Message Template Auto Format enabled
+2022-06-03 14:33:01.1130 Info Loading assembly: NLog.Extensions.Logging
+2022-06-03 14:33:01.1130 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-03 14:33:01.1985 Info Adding target AsyncTargetWrapper(Name=logConsole)
+2022-06-03 14:33:01.2221 Info Closing old configuration.
+2022-06-03 14:33:01.2221 Info Validating config: TargetNames=logConsole, ConfigItems=34, FilePath=C:\Users\Juan\Desktop\Pruebas tecnicas\Recursiva challenge\SolucionRecursiva\RecursivaChallenge\NLog.config
